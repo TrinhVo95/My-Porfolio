@@ -8,6 +8,42 @@ body {
   font-family: "Kalam", cursive;
   font-size: 1.5rem;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes tossing {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
 /* Banner */
 .banner {
   position: relative;
@@ -33,13 +69,48 @@ body {
   top: 12%;
   left: 15%;
 }
+.rotate {
+  animation: rotate 3.5s infinite;
+}
 .bannerBlock2 {
   position: absolute;
   width: 12%;
   top: 12%;
   left: 15%;
 }
-
+.rotate2 {
+  animation: rotate 5.5s infinite;
+}
+.bannerTree1 {
+  position: absolute;
+  width: 9.02%;
+  top: 53.75%;
+  left: 14.66%;
+  z-index: 107;
+}
+.pop {
+  animation: pop 2.5s infinite;
+}
+.bannerTree2 {
+  position: absolute;
+  width: 10.63%;
+  top: 49.5%;
+  left: 71.26%;
+  z-index: 109;
+}
+.pop2 {
+  animation: pop 3.3s infinite;
+}
+.bannerTree3 {
+  position: absolute;
+  width: 11.48%;
+  top: 39.5%;
+  left: 77.78%;
+  z-index: 108;
+}
+.pop3 {
+  animation: pop 2.2s infinite;
+}
 /* About */
 .about {
   background: linear-gradient(
@@ -75,6 +146,10 @@ body {
   width: 50%;
   top: 9%;
   left: 24.5%;
+}
+.tossing {
+  animation: tossing 3.5s infinite;
+  transform-origin: 50% 90%;
 }
 .text {
   width: 40%;
